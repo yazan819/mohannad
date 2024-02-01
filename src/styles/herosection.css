@@ -1,0 +1,38 @@
+.herosectionContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.1);
+}
+  .centerChip {
+    width: 30%;
+    height: 47vh;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    clip-path: polygon(28% 0, 74% 0, 95% 49%, 72% 100%, 26% 100%, 5% 50%);
+  }
+.centerChip h1 {
+  width: 100%;
+  padding: 50px;
+  color: #2c539d;
+  text-align: center;
+  animation: fadeInRight 1s ease-in-out;
+
+  font-size: 2.7rem;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
